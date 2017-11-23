@@ -1,0 +1,96 @@
+.card {
+  background-color: white;
+  margin: 10px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+// .card:hover {
+//   margin-top: -5px;
+// }
+
+.card-body {
+  position: relative;
+  height: 180px;
+  background-size: cover;
+}
+
+.card-place {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.card-avatar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.card-body p, .card-body h3 {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}
+
+.card-footer {
+  align-items: center;
+  position: relative;
+  height: 50px;
+}
+
+.card-date{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #a8a8a8;
+}
+
+.card-links {
+  position: absolute;
+  right: 10px;
+}
+
+.card-links ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.card-links .fa {
+  padding: 0 5px;
+  color: #a8a8a8;
+}
+
+.card-links .fa:hover {
+  color: #757575;
+}

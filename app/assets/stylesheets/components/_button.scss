@@ -1,0 +1,15 @@
+.btn-yours {
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 400;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold
+}
+
+.btn-yours:hover{
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: 0 0 5px rgba(59, 91, 214, 0.4)
+}
