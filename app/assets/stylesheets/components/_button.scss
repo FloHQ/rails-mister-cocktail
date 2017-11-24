@@ -13,3 +13,22 @@
   background-color: #000000;
   box-shadow: 0 0 5px rgba(59, 91, 214, 0.4)
 }
+
+a {
+  text-decoration: none;
+}
+
+.btn-banner {
+    padding: 0.6em 1em;
+    border-radius: 7px;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-banner:hover{
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4)
+}

@@ -13,5 +13,9 @@ $('.navbar-t').affix({
   offset: {top: 100}
 });
 
+
+import { loadDynamicBannerText } from '../components/banner';
+loadDynamicBannerText();
+
 import 'bootstrap';
 
