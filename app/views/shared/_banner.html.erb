@@ -4,7 +4,7 @@
     <p>
       <span id="banner-typed-text"></span>
     </p>
-    <%= link_to "Start", new_cocktail_path, class: " btn btn-banner" %>
+    <%= link_to "Start", 'cocktail/mixologist', class: " btn btn-banner" %>
   </div>
 </div>
 
@@ -27,16 +27,15 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "New Cocktail", new_cocktail_path, class: " btn btn-yours" %></li>
       </ul>
     </div>
   </div>
 </div>
 
-<nav class="navbar-wagon">
-    <!-- Logo -->
+<div id="nav" class="navbar-wagon">
+  <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
   <%= image_tag "logo.png" %>
   <% end %>
@@ -54,12 +53,11 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "New Cocktail", new_cocktail_path, class: " btn btn-yours" %></li>
       </ul>
     </div>
   </div>
-</nav>
+</div>
 
 

@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   end
   resources :doses, only: [:destroy]
 
+  get 'cocktail/mixologist', to: 'cocktails#mixologist', as: 'mixologist_path'
+
   root "cocktails#index"
 end

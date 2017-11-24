@@ -34,6 +34,12 @@ class CocktailsController < ApplicationController
   # def destroy
   # end
 
+  def mixologist
+
+  end
+
+  private
+
   def cocktail_params
     params.require(:cocktail).permit(:name)
   end
