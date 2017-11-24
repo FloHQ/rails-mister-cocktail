@@ -9,5 +9,9 @@
 
 console.log('Hello World from Webpacker')
 
+$('.navbar-t').affix({
+  offset: {top: 100}
+});
+
 import 'bootstrap';
 

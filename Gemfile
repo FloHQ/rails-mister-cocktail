@@ -1,3 +1,4 @@
+ruby '2.3.5'
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -12,8 +13,9 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'faker'
-ruby '2.3.5'
 gem 'figaro'
+gem 'cloudinary'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
