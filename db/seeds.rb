@@ -36,7 +36,7 @@ end
   @cocktail.remote_photo_url = images.sample
   @cocktail.save!
   [3, 4, 5, 6].sample.times do
-    desc = ["1cl", "1.5cl" "2cl", "2.5cl", "3cl", "3.5cl", "4cl", "4.5cl", "5cl", "5.5cl", "6cl", "1 drop", "2 drops"]
+    desc = ["1cl", "1.5cl", "2cl", "2.5cl", "3cl", "3.5cl", "4cl", "4.5cl", "5cl", "5.5cl", "6cl", "1 drop", "2 drops"]
     @dose = Dose.new(description: desc.sample, ingredient_id: ingredient_range.sample)
     @dose.cocktail = @cocktail
     @dose.save
