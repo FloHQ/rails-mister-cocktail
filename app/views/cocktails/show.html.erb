@@ -11,6 +11,7 @@
           <% doses.each do |d| %>
             <li> <%= d.description %> de <%= d.ingredient.name %> <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, dose_path(d), method: :delete, data: { confirm: "Are you sure?" }%></li>
           <% end %>
+          <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
         </ul>
       </div>
     </div>

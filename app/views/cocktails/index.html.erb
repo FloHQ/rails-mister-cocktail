@@ -1,5 +1,5 @@
 <% content_for(:banner) do %>
-  <%= render 'shared/banner' %>
+<%= render 'shared/banner' %>
 <% end %>
 
 <div id="content-under" class="container">
@@ -7,9 +7,9 @@
     <% @cocktails.each do |c| %>
     <div class="col-xs-12 col-sm-4">
       <div class="card">
-        <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('/assets/longisland.jpg');">
+        <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path c.photo unless c.photo.blank?%>');">
           <div class="card-description">
-          <h2><%= link_to c.name, cocktail_path(c) %></h2>
+            <h2><%= link_to c.name, cocktail_path(c) %></h2>
           </div>
           <%= image_tag "shaker.png", class: 'card-user' %>
           <%= link_to "", cocktail_path(c), class: "card-link"  %>

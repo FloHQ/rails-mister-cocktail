@@ -1,3 +1,5 @@
+require 'faker'
+
 class CocktailsController < ApplicationController
   def index
     @cocktails = Cocktail.all
@@ -35,12 +37,24 @@ class CocktailsController < ApplicationController
   # end
 
   def mixologist
-
+    @cocktail = Cocktail.new(name: Faker::Hipster.words(2).join(" ").capitalize)
+    @cocktail.save!
+    ingredient_range = set_ingredient_range.to_a
+    [3, 4, 5, 6, 7].sample.times do
+      desc = ["1cl", "1.5cl" "2cl", "2.5cl", "3cl", "3.5cl", "4cl", "4.5cl", "5cl", "5.5cl", "6cl", "1 drop", "2 drops"]
+      @dose = Dose.new(description: desc.sample, ingredient_id: ingredient_range.sample)
+      @dose.cocktail = @cocktail
+      @dose.save
+    end
   end
 
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
+  end
+
+  def set_ingredient_range
+    (Ingredient.first.id..Ingredient.last.id)
   end
 end
